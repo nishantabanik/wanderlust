@@ -111,23 +111,39 @@
                     </div>
                     <div class="flex flex-col gap-6 items-center md:items-start">
                         <ul class="flex justify-center md:justify-start gap-8">
-                            <li>
-                                <img class="cursor-pointer" src="/images/fb.svg" />
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/fb.svg"
+                                    alt="Facebook"
+                                />
+                                <span class="socialFollowToolTip"> Follow on Facebook </span>
                             </li>
-                            <li>
-                                <img class="cursor-pointer" src="/images/ig.svg" />
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/ig.svg"
+                                    alt="Instagram"
+                                />
+                                <span class="socialFollowToolTip"> Follow on Instagram </span>
                             </li>
-                            <li>
-                                <img class="cursor-pointer" src="/images/x.svg" />
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/x.svg"
+                                    alt="X"
+                                />
+                                <span class="socialFollowToolTip"> Follow on X </span>
                             </li>
                         </ul>
+
                         <ul class="flex flex-wrap justify-center md:justify-start gap-4">
                             <li>
                                 <button
                                     class="flex flex-row gap-1 justify-center items-center buttonFooter md:px-6 md:py-3 md:text-base"
                                 >
                                     <img
-                                        class="h-4 w-4 md:h-5 md:w-5"
+                                        class="h-2 w-2 md:h-5 md:w-5"
                                         src="images/globe.svg"
                                         alt="Language"
                                     />
