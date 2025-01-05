@@ -12,4 +12,8 @@
     .footerLink:hover::after {
         @apply w-[100%];
     }
+
+    .buttonFooter {
+        @apply px-4 py-2 text-sm rounded text-black border border-slate-900 bg-[#ddc7bb] hover:border-[#8f7669];
+    }
 }

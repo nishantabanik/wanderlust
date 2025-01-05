@@ -22,19 +22,17 @@
             <!-- 4th Section for Anne -->
         </main>
         <footer class="bg-[#ddc7bb]">
-            <div class="px-16 border-t-[2px] border-[#bca08e]">
-                <div class="py-8 mt-2 flex flex-row gap-4">
-                    <div class="w-2/5">
+            <div class="px-14 sm:px-16 md:px-20 border-t-[2px] border-[#bca08e]">
+                <div class="py-4 sm:py-8 mt-2 flex flex-col gap-6 md:gap-8 sm:flex-row sm:gap-4">
+                    <div class="w-full sm:w-2/5">
                         <div class="mb-4 text-2xl">wanderlust</div>
                         <p>Unlock the world and start exploring today.</p>
                     </div>
-                    <div class="w-3/5 grid grid-cols-4 gap-4">
+                    <div
+                        class="w-full sm:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+                    >
                         <div>
-                            <h2
-                                class="font-semibold tracking-[1px] mb-4 text-lg"
-                            >
-                                About
-                            </h2>
+                            <h2 class="font-semibold tracking-[1px] mb-4 text-lg">About</h2>
                             <ul class="space-y-4">
                                 <li>
                                     <a class="footerLink" href="#">Our Story</a>
@@ -49,6 +47,7 @@
                                     <a class="footerLink" href="#">Resources</a>
                                 </li>
                             </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
                         <div>
                             <h2 class="font-semibold mb-4 text-lg">Support</h2>
@@ -60,6 +59,7 @@
                                     <a class="footerLink">Terms of Service</a>
                                 </li>
                             </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
                         <div>
                             <h2 class="font-semibold mb-4 text-lg">Find Us</h2>
@@ -68,37 +68,30 @@
                                 <li><a class="footerLink">Locations</a></li>
                                 <li><a class="footerLink">Newsletter</a></li>
                             </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
                         <div>
-                            <h2 class="font-semibold mb-4 text-lg">
-                                Get our App
-                            </h2>
+                            <h2 class="font-semibold mb-4 text-lg">Get our App</h2>
                             <ul class="space-y-4">
                                 <li>
-                                    <img
-                                        class="cursor-pointer"
-                                        src="/images/googleplay.svg"
-                                    />
+                                    <img class="cursor-pointer" src="/images/googleplay.svg" />
                                 </li>
                                 <li>
-                                    <img
-                                        class="cursor-pointer"
-                                        src="/images/applestore.svg"
-                                    />
+                                    <img class="cursor-pointer" src="/images/applestore.svg" />
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <hr class="my-6 border-t-[2px] border-[#bca08e]" />
-                <div class="flex flex-row gap-6 justify-between pb-4">
-                    <div class="flex flex-col gap-6">
-                        <ul class="flex flex-row gap-8 text-sm">
+                <div class="flex flex-col md:flex-row gap-6 md:justify-between pb-4">
+                    <div class="flex flex-col gap-4 md:gap-6">
+                        <ul
+                            class="flex flex-wrap gap-4 md:gap-8 text-sm justify-center md:justify-start"
+                        >
                             <li>©2025 wanderlust</li>
                             <li>
-                                <a class="footerLink" href="#"
-                                    >Cookie Settings</a
-                                >
+                                <a class="footerLink" href="#">Cookie Settings</a>
                             </li>
                             <li><a class="footerLink" href="#">Privacy</a></li>
                             <li>
@@ -107,7 +100,7 @@
                             <li><a class="footerLink" href="#">Imprint</a></li>
                         </ul>
                         <ul
-                            class="flex flex-row items-center justify-center gap-8"
+                            class="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-8"
                         >
                             <li><img src="/images/bookingdotcom.svg" /></li>
                             <li><img src="/images/kayak.svg" /></li>
@@ -116,43 +109,33 @@
                             <li><img src="/images/agoda.svg" /></li>
                         </ul>
                     </div>
-                    <div class="flex flex-col gap-6">
-                        <ul class="flex flex-row gap-8 ml-2">
+                    <div class="flex flex-col gap-6 items-center md:items-start">
+                        <ul class="flex justify-center md:justify-start gap-8">
                             <li>
-                                <img
-                                    class="cursor-pointer"
-                                    src="/images/fb.svg"
-                                />
+                                <img class="cursor-pointer" src="/images/fb.svg" />
                             </li>
                             <li>
-                                <img
-                                    class="cursor-pointer"
-                                    src="/images/ig.svg"
-                                />
+                                <img class="cursor-pointer" src="/images/ig.svg" />
                             </li>
                             <li>
-                                <img
-                                    class="cursor-pointer"
-                                    src="/images/x.svg"
-                                />
+                                <img class="cursor-pointer" src="/images/x.svg" />
                             </li>
                         </ul>
-                        <ul class="flex flex-row gap-4">
+                        <ul class="flex flex-wrap justify-center md:justify-start gap-4">
                             <li>
                                 <button
-                                    class="flex flex-row gap-1 justify-center items-center px-4 py-2 text-sm rounded text-black border border-slate-900 bg-[#ddc7bb] hover:border-[#8f7669]"
+                                    class="flex flex-row gap-1 justify-center items-center buttonFooter md:px-6 md:py-3 md:text-base"
                                 >
                                     <img
-                                        class="h-4 w-4"
+                                        class="h-4 w-4 md:h-5 md:w-5"
                                         src="images/globe.svg"
+                                        alt="Language"
                                     />
                                     English
                                 </button>
                             </li>
                             <li>
-                                <button
-                                    class="px-4 py-2 text-sm rounded text-black border border-slate-900 bg-[#ddc7bb] hover:border-[#8f7669]"
-                                >
+                                <button class="buttonFooter md:px-6 md:py-3 md:text-base">
                                     $ USD
                                 </button>
                             </li>
