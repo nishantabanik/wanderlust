@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Wanderlust</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="output.css" />
     </head>
     <body>
         <header>
@@ -33,40 +32,85 @@
                     >
                         <div>
                             <h2 class="font-semibold tracking-[1px] mb-4 text-lg">About</h2>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a class="footerLink" href="#">Our Story</a>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Our Story</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
                                 </li>
-                                <li>
-                                    <a class="footerLink" href="#">Our Team</a>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Our Team</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
                                 </li>
-                                <li>
-                                    <a class="footerLink" href="#">Careers</a>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Careers</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
                                 </li>
-                                <li>
-                                    <a class="footerLink" href="#">Resources</a>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Resources</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
                                 </li>
                             </ul>
                             <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
                         <div>
                             <h2 class="font-semibold mb-4 text-lg">Support</h2>
-                            <ul class="space-y-4">
-                                <li><a class="footerLink">FAQ</a></li>
-                                <li><a class="footerLink">Contact Us</a></li>
-                                <li><a class="footerLink">Help Center</a></li>
-                                <li>
-                                    <a class="footerLink">Terms of Service</a>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">FAQ</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-8"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Contact Us</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Help Center</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Terms of Service</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-28"
+                                    ></span>
                                 </li>
                             </ul>
                             <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
                         <div>
                             <h2 class="font-semibold mb-4 text-lg">Find Us</h2>
-                            <ul class="space-y-4">
-                                <li><a class="footerLink">Events</a></li>
-                                <li><a class="footerLink">Locations</a></li>
-                                <li><a class="footerLink">Newsletter</a></li>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Events</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-12"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Locations</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Newsletter</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
                             </ul>
                             <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
                         </div>
@@ -87,17 +131,33 @@
                 <div class="flex flex-col md:flex-row gap-6 md:justify-between pb-4">
                     <div class="flex flex-col gap-4 md:gap-6">
                         <ul
-                            class="flex flex-wrap gap-4 md:gap-8 text-sm justify-center md:justify-start"
+                            class="flex flex-wrap gap-4 md:gap-8 text-sm justify-center md:justify-start relative"
                         >
                             <li>©2025 wanderlust</li>
-                            <li>
-                                <a class="footerLink" href="#">Cookie Settings</a>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Cookie Settings</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-24"
+                                ></span>
                             </li>
-                            <li><a class="footerLink" href="#">Privacy</a></li>
-                            <li>
-                                <a class="footerLink" href="#">Ad Choices</a>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Privacy</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-10"
+                                ></span>
                             </li>
-                            <li><a class="footerLink" href="#">Imprint</a></li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Ad Choices</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                ></span>
+                            </li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Imprint</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-10"
+                                ></span>
+                            </li>
                         </ul>
                         <ul
                             class="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-8"
@@ -117,7 +177,11 @@
                                     src="/images/fb.svg"
                                     alt="Facebook"
                                 />
-                                <span class="socialFollowToolTip"> Follow on Facebook </span>
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on Facebook
+                                </span>
                             </li>
                             <li class="relative group">
                                 <img
@@ -125,7 +189,11 @@
                                     src="/images/ig.svg"
                                     alt="Instagram"
                                 />
-                                <span class="socialFollowToolTip"> Follow on Instagram </span>
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on Instagram
+                                </span>
                             </li>
                             <li class="relative group">
                                 <img
@@ -133,14 +201,18 @@
                                     src="/images/x.svg"
                                     alt="X"
                                 />
-                                <span class="socialFollowToolTip"> Follow on X </span>
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on X
+                                </span>
                             </li>
                         </ul>
 
                         <ul class="flex flex-wrap justify-center md:justify-start gap-4">
                             <li>
                                 <button
-                                    class="flex flex-row gap-1 justify-center items-center buttonFooter md:px-6 md:py-3 md:text-base"
+                                    class="flex flex-row gap-1 justify-center items-center text-sm rounded bg-[#ddc7bb] border border-transparent hover:border-[#8f7669] px-4 py-2 font-medium text-[#000000] md:px-6 md:py-3 md:text-base"
                                 >
                                     <img
                                         class="h-2 w-2 md:h-5 md:w-5"
@@ -151,7 +223,9 @@
                                 </button>
                             </li>
                             <li>
-                                <button class="buttonFooter md:px-6 md:py-3 md:text-base">
+                                <button
+                                    class="text-sm rounded bg-[#ddc7bb] border border-transparent hover:border-[#8f7669] px-4 py-2 flex items-center gap-2 justify-center font-medium text-[#000000] md:px-6 md:py-3 md:text-base"
+                                >
                                     $ USD
                                 </button>
                             </li>
