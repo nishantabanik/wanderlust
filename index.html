@@ -3,17 +3,104 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wanderlust</title>
+        <title>Wanderlust - Your Travel Companion</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
         <header>
             <!-- 1st Section for Nishanta -->
-            <nav></nav>
+            <div class="flex justify-between items-center bg-sky-300">
+                <div class="p-4">
+                    <img class="w-32" src="src/SCR-20250106-kymg.png" alt="" />
+                </div>
+                <nav class="flex justify-between items-end">
+                    <ul class="flex gap-8">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#destinations">Our Destinations</a></li>
+                        <li><a href="#packages">Our Packages</a></li>
+                    </ul>
+                </nav>
+                <div class="flex gap-8 mr-10">
+                    <button class="search-icon">🔍</button>
+                    <button class="profile-icon">👤</button>
+                    <button class="signup-btn">Sign up</button>
+                </div>
+            </div>
         </header>
         <main>
-            <h1>Welcome to Wanderlust</h1>
+            <div class="container mx-auto px-6 pt-16 pb-24">
+                <div class="grid grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <h1 class="text-6xl font-bold text-gray-800">
+                            Discover Your Next Adventure
+                        </h1>
+                        <p class="text-xl text-gray-600">
+                            Welcome to Wanderlust. Plan the perfect trip with
+                            Wanderlust. Explore breathtaking destinations and
+                            create unforgettable memories.
+                        </p>
+                        <button
+                            class="bg-sky-600 text-white px-8 py-3 rounded-md text-lg"
+                        >
+                            Explore Now
+                        </button>
+                    </div>
+                    <div class="w-full">
+                        <img
+                            class="w-full h-auto rounded-lg shadow-xl"
+                            src="src/Switzerland-Avalanche-03.jpg"
+                            alt="Travel Adventure"
+                        />
+                    </div>
+                </div>
 
+                <div class="mt-12 bg-gray-50 rounded-xl p-6 max-w-8xl mx-auto">
+                    <div class="flex items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <label
+                                for="location"
+                                class="block text-gray-900 mb-1"
+                                >Location</label
+                            >
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="Enter your destination"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <label for="date" class="block text-gray-900 mb-1"
+                                >Select Date</label
+                            >
+                            <input
+                                type="date"
+                                id="date"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <label for="budget" class="block text-gray-900 mb-1"
+                                >Budget</label
+                            >
+                            <input
+                                type="text"
+                                id="budget"
+                                placeholder="Enter your budget"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="mt-6">
+                            <button
+                                class="bg-sky-600 text-white px-10 py-2 rounded-md"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- 2nd Section for Johanna -->
 
             <!-- 3rd Section for Max -->
