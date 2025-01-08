@@ -7,27 +7,100 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <header class="">
-            <!-- 1st Section for Nishanta -->
-            <div class="flex justify-between items-center bg-sky-300">
-                <div class="p-4">
-                    <img class="w-32" src="./images/SCR-20250106-kymg.png" />
+        <header class="bg-sky-300">
+            <div class="flex justify-between items-center p-4">
+                <!-- Left Menu -->
+                <div class="flex items-center">
+                    <div class="md:hidden">
+                        <label for="left-menu" class="cursor-pointer">
+                            <div class="space-y-2">
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <img class="w-32 ml-4" src="./images/SCR-20250106-kymg.png" alt="Logo" />
+
+                    <!-- Desktop Menu -->
+                    <nav class="hidden md:block ml-6">
+                        <ul class="flex gap-8">
+                            <li
+                                class="rounded-md px-3 py-2 text-lg font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                            >
+                                <a href="#home">Home</a>
+                            </li>
+                            <li
+                                class="rounded-md px-3 py-2 text-lg font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                            >
+                                <a href="#service">Service</a>
+                            </li>
+                            <li
+                                class="rounded-md px-3 py-2 text-lg font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                            >
+                                <a href="#destinations">Our Destinations</a>
+                            </li>
+                            <li
+                                class="rounded-md px-3 py-2 text-lg font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                            >
+                                <a href="#packages">Our Packages</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="flex justify-between items-end">
-                    <ul class="flex gap-8">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#destinations">Our Destinations</a></li>
-                        <li><a href="#packages">Our Packages</a></li>
+
+                <!-- Right Menu -->
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex gap-8 items-center">
+                        <button class="text-2xl">🔍</button>
+                        <button class="text-2xl">👤</button>
+                        <button class="bg-white px-4 py-2 rounded-md">Sign up</button>
+                    </div>
+
+                    <div class="md:hidden">
+                        <label for="right-menu" class="cursor-pointer">
+                            <div class="space-y-2">
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                                <span class="block w-8 h-0.5 bg-gray-800"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menus (These will slide in with CSS) -->
+            <div class="md:hidden">
+                <!-- Left Mobile Menu -->
+                <input type="checkbox" id="left-menu" class="hidden peer/left" />
+                <nav
+                    class="fixed top-0 left-0 w-64 h-full bg-white -translate-x-full peer-checked/left:translate-x-0 transition-transform duration-200 ease-in-out"
+                >
+                    <ul class="p-4 space-y-4">
+                        <li><a href="#home" class="block py-2">Home</a></li>
+                        <li><a href="#service" class="block py-2">Service</a></li>
+                        <li><a href="#destinations" class="block py-2">Our Destinations</a></li>
+                        <li><a href="#packages" class="block py-2">Our Packages</a></li>
                     </ul>
                 </nav>
-                <div class="flex gap-8 mr-10">
-                    <button class="search-icon">🔍</button>
-                    <button class="profile-icon">👤</button>
-                    <button class="signup-btn">Sign up</button>
+
+                <!-- Right Mobile Menu -->
+                <input type="checkbox" id="right-menu" class="hidden peer/right" />
+                <div
+                    class="fixed top-0 right-0 w-64 h-full bg-white translate-x-full peer-checked/right:translate-x-0 transition-transform duration-200 ease-in-out"
+                >
+                    <div class="p-4 space-y-4">
+                        <button class="block w-full text-left py-2">🔍 Search</button>
+                        <button class="block w-full text-left py-2">👤 Profile</button>
+                        <button class="block w-full bg-sky-300 px-4 py-2 rounded-md">
+                            Sign up
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
+
         <main>
             <div class="container mx-auto px-6 pt-16 pb-24">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
