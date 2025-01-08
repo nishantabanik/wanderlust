@@ -1,131 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wanderlust</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header>
-      <!-- 1st Section for Nishanta -->
-      <nav></nav>
-    </header>
-    <main>
-      <h1>Welcome to Wanderlust</h1>
-
-      <!-- 2nd Section for Johanna -->
-      <section
-        id="about"
-        class="flex flex-col lg:flex-row gap-8 p-8 my-16 mx-16 items-center"
-      >
-        <img
-          src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Globe"
-          class="w-full lg:w-2/4 rounded-xl"
-        />
-        <div
-          class="flex flex-col gap-8 p-4 justify-center items-center lg:items-start"
-        >
-          <h2 class="text-3xl font-bold text-center lg:text-start">
-            We help you to find your dream adventure
-          </h2>
-          <p class="font-semibold text-base">
-            At Wanderlust, we turn your travel dreams into unforgettable
-            adventures. From hidden gems to iconic destinations, we craft
-            personalized journeys that inspire, explore, and delight. Start your
-            next story with us today!
-          </p>
-          <div class="flex gap-8 justify-between">
-            <div>
-              <h3 class="text-3xl font-extrabold">100+</h3>
-              <p class="font-medium text-base">Desitinations</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wanderlust - Your Travel Companion</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <!-- 1st Section for Nishanta -->
+            <div class="flex justify-between items-center bg-sky-300">
+                <div class="p-4">
+                    <img class="w-32" src="src/SCR-20250106-kymg.png" alt="" />
+                </div>
+                <nav class="flex justify-between items-end">
+                    <ul class="flex gap-8">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#destinations">Our Destinations</a></li>
+                        <li><a href="#packages">Our Packages</a></li>
+                    </ul>
+                </nav>
+                <div class="flex gap-8 mr-10">
+                    <button class="search-icon">🔍</button>
+                    <button class="profile-icon">👤</button>
+                    <button class="signup-btn">Sign up</button>
+                </div>
             </div>
-            <div>
-              <h3 class="text-3xl font-extrabold">2K+</h3>
-              <p class="font-medium text-base">Happy cutomers</p>
-            </div>
-            <div>
-              <h3 class="text-3xl font-extrabold">500+</h3>
-              <p class="font-medium text-base">New firendships</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="why" class="flex flex-col gap-8 p-8 my-16 items-center">
-        <h2 class="text-3xl font-bold">Why choose us</h2>
-        <p class="font-semibold text-base text-center">
-          Choose Wanderlust for a travel experience like no other. With expert
-          planners, personalized itineraries, and a passion for adventure, we
-          make every trip seamless, unique, and unforgettable. Your journey, our
-          commitment!
-        </p>
-        <div
-          class="flex flex-col lg:flex-row justify-center items-stretch my-8 gap-8"
-        >
-          <div
-            class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=1wZ7O7ctGOe4&format=png&color=000000"
-              alt="Icon"
-              class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
-            />
-            <h4 class="font-bold text-l">Expert Guidance</h4>
-            <p class="font-medium text-sm text-center lg:text-start">
-              Benfit from our team's seasoned expertise for a smooth travel
-              experience
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=Cssf43cjx2fu&format=png&color=000000"
-              alt="Icon"
-              class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
-            />
-            <h4 class="font-bold text-l">Personalized Service</h4>
-            <p class="font-medium text-sm text-center lg:text-start">
-              Our services adapt to your unique needs, making your journey
-              stress-free
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=cksgiVxzNe4j&format=png&color=000000"
-              alt="Icon"
-              class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
-            />
-            <h4 class="font-bold text-l">Transparent Process</h4>
-            <p class="font-medium text-sm text-center lg:text-start">
-              Stay informed with our clear and honest approach to planning your
-              journey
-            </p>
-          </div>
-          <div
-            class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
-          >
-            <img
-              src="https://img.icons8.com/?size=100&id=q65LZo1xaciW&format=png&color=000000"
-              alt="Icon"
-              class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
-            />
-            <h4 class="font-bold text-l">Exceptional Support</h4>
-            <p class="font-medium text-sm text-center lg:text-start">
-              Providing peace of mind with our responsive and attentive customer
-              service
-            </p>
-          </div>
-        </div>
-      </section>
+        </header>
+        <main>
+            <div class="container mx-auto px-6 pt-16 pb-24">
+                <div class="grid grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <h1 class="text-6xl font-bold text-gray-800">
+                            Discover Your Next Adventure
+                        </h1>
+                        <p class="text-xl text-gray-600">
+                            Welcome to Wanderlust. Plan the perfect trip with Wanderlust. Explore
+                            breathtaking destinations and create unforgettable memories.
+                        </p>
+                        <button class="bg-sky-600 text-white px-8 py-3 rounded-md text-lg">
+                            Explore Now
+                        </button>
+                    </div>
+                    <div class="w-full">
+                        <img
+                            class="w-full h-auto rounded-lg shadow-xl"
+                            src="src/Switzerland-Avalanche-03.jpg"
+                            alt="Travel Adventure"
+                        />
+                    </div>
+                </div>
 
-      <!-- 3rd Section for Max -->
+                <div class="mt-12 bg-gray-50 rounded-xl p-6 max-w-8xl mx-auto">
+                    <div class="flex items-center justify-between gap-4">
+                        <div class="flex-1">
+                            <label for="location" class="block text-gray-900 mb-1">Location</label>
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="Enter your destination"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <label for="date" class="block text-gray-900 mb-1">Select Date</label>
+                            <input
+                                type="date"
+                                id="date"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <label for="budget" class="block text-gray-900 mb-1">Budget</label>
+                            <input
+                                type="text"
+                                id="budget"
+                                placeholder="Enter your budget"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                            />
+                        </div>
+                        <div class="mt-6">
+                            <button class="bg-sky-600 text-white px-10 py-2 rounded-md">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <!-- 4th Section for Anne -->
-    </main>
-    <footer></footer>
-  </body>
+            <!-- 2nd Section for Johanna -->
+
+            <section
+                id="about"
+                class="flex flex-col lg:flex-row gap-8 p-8 my-16 mx-16 items-center"
+            >
+                <img
+                    src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Globe"
+                    class="w-full lg:w-2/4 rounded-xl"
+                />
+                <div class="flex flex-col gap-8 p-4 justify-center items-center lg:items-start">
+                    <h2 class="text-3xl font-bold text-center lg:text-start">
+                        We help you to find your dream adventure
+                    </h2>
+                    <p class="font-semibold text-base">
+                        At Wanderlust, we turn your travel dreams into unforgettable adventures.
+                        From hidden gems to iconic destinations, we craft personalized journeys that
+                        inspire, explore, and delight. Start your next story with us today!
+                    </p>
+                    <div class="flex gap-8 justify-between">
+                        <div>
+                            <h3 class="text-3xl font-extrabold">100+</h3>
+                            <p class="font-medium text-base">Desitinations</p>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">2K+</h3>
+                            <p class="font-medium text-base">Happy cutomers</p>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">500+</h3>
+                            <p class="font-medium text-base">New firendships</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="why" class="flex flex-col gap-8 p-8 my-16 items-center">
+                <h2 class="text-3xl font-bold">Why choose us</h2>
+                <p class="font-semibold text-base text-center">
+                    Choose Wanderlust for a travel experience like no other. With expert planners,
+                    personalized itineraries, and a passion for adventure, we make every trip
+                    seamless, unique, and unforgettable. Your journey, our commitment!
+                </p>
+                <div class="flex flex-col lg:flex-row justify-center items-stretch my-8 gap-8">
+                    <div
+                        class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
+                    >
+                        <img
+                            src="https://img.icons8.com/?size=100&id=1wZ7O7ctGOe4&format=png&color=000000"
+                            alt="Icon"
+                            class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
+                        />
+                        <h4 class="font-bold text-l">Expert Guidance</h4>
+                        <p class="font-medium text-sm text-center lg:text-start">
+                            Benfit from our team's seasoned expertise for a smooth travel experience
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
+                    >
+                        <img
+                            src="https://img.icons8.com/?size=100&id=Cssf43cjx2fu&format=png&color=000000"
+                            alt="Icon"
+                            class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
+                        />
+                        <h4 class="font-bold text-l">Personalized Service</h4>
+                        <p class="font-medium text-sm text-center lg:text-start">
+                            Our services adapt to your unique needs, making your journey stress-free
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
+                    >
+                        <img
+                            src="https://img.icons8.com/?size=100&id=cksgiVxzNe4j&format=png&color=000000"
+                            alt="Icon"
+                            class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
+                        />
+                        <h4 class="font-bold text-l">Transparent Process</h4>
+                        <p class="font-medium text-sm text-center lg:text-start">
+                            Stay informed with our clear and honest approach to planning your
+                            journey
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center lg:items-start gap-4 bg-[#DDC7BB] p-8 rounded-xl shadow-md"
+                    >
+                        <img
+                            src="https://img.icons8.com/?size=100&id=q65LZo1xaciW&format=png&color=000000"
+                            alt="Icon"
+                            class="w-1/4 lg:w-2/6 bg-[#FBF5F1] p-2 rounded-md"
+                        />
+                        <h4 class="font-bold text-l">Exceptional Support</h4>
+                        <p class="font-medium text-sm text-center lg:text-start">
+                            Providing peace of mind with our responsive and attentive customer
+                            service
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3rd Section for Max -->
+
+            <!-- 4th Section for Anne -->
+            <div
+                class="flex flex-col mx-auto px-4 md:px-0 py-20 justify-center items-start md:items-center bg-slate-50"
+            >
+                <h2 class="font-extrabold text-3xl">
+                    Want to stay in the loop or have any questions?
+                </h2>
+                <p class="text-lg text-black/80">
+                    Sign up for the latest deals, product news, and updates from Wanderlust.
+                </p>
+                <ul class="flex flex-col md:flex-row px-0 py-8 md:p-8 gap-4 text-black/80">
+                    <li class="flex flex-row gap-2 text-[#4a2c22]">
+                        <img class="w-6 h-6" src="images/verified.png" alt="verified icon" />
+                        Chat with live support
+                    </li>
+                    <li class="flex flex-row gap-2 text-[#4a2c22]">
+                        <img class="w-6 h-6" src="images/verified.png" alt="verified icon" />
+                        Browse our FAQ
+                    </li>
+                </ul>
+                <form class="flex flex-row items-center gap-4">
+                    <label class="flex-grow">
+                        <div class="relative w-80">
+                            <span
+                                class="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#4a2c22]"
+                            >
+                                <img class="w-4 h-4" src="images/email-icon.png" />
+                            </span>
+                            <input
+                                class="bg-[#decab9] text-[#4a2c22] placeholder-[#4a2c22] w-full focus:outline-none px-4 pl-10 py-2 text-base shadow-lg rounded-md"
+                                type="email"
+                                placeholder="Enter your email address"
+                                required
+                            />
+                        </div>
+                    </label>
+                    <button
+                        class="bg-black/90 hover:bg-black focus:bg-black/90 text-white hover:text-white font-montserrat font-medium leading-[22px] py-2 px-6 rounded-md h-full shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </main>
+        <footer class="bg-[#ddc7bb]">
+            <div class="px-14 sm:px-16 md:px-20 border-t-[2px] border-[#bca08e]">
+                <div class="py-4 sm:py-8 mt-2 flex flex-col gap-6 md:gap-8 sm:flex-row sm:gap-4">
+                    <div class="w-full sm:w-2/5">
+                        <div class="mb-4 text-2xl">wanderlust</div>
+                        <p>Unlock the world and start exploring today.</p>
+                    </div>
+                    <div
+                        class="w-full sm:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+                    >
+                        <div>
+                            <h2 class="font-semibold tracking-[1px] mb-4 text-lg">About</h2>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Our Story</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Our Team</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Careers</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Resources</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                            </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
+                        </div>
+                        <div>
+                            <h2 class="font-semibold mb-4 text-lg">Support</h2>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">FAQ</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-8"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Contact Us</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Help Center</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Terms of Service</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-28"
+                                    ></span>
+                                </li>
+                            </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
+                        </div>
+                        <div>
+                            <h2 class="font-semibold mb-4 text-lg">Find Us</h2>
+                            <ul class="space-y-4 relative">
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Events</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-12"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Locations</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                    ></span>
+                                </li>
+                                <li class="relative group">
+                                    <a class="cursor-pointer" href="#">Newsletter</a>
+                                    <span
+                                        class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-20"
+                                    ></span>
+                                </li>
+                            </ul>
+                            <hr class="mt-6 border-t-[1px] border-[#bca08e] sm:hidden" />
+                        </div>
+                        <div>
+                            <h2 class="font-semibold mb-4 text-lg">Get our App</h2>
+                            <ul class="space-y-4">
+                                <li>
+                                    <img class="cursor-pointer" src="/images/googleplay.svg" />
+                                </li>
+                                <li>
+                                    <img class="cursor-pointer" src="/images/applestore.svg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-t-[2px] border-[#bca08e]" />
+                <div class="flex flex-col md:flex-row gap-6 md:justify-between pb-4">
+                    <div class="flex flex-col gap-4 md:gap-6">
+                        <ul
+                            class="flex flex-wrap gap-4 md:gap-8 text-sm justify-center md:justify-start relative"
+                        >
+                            <li>©2025 wanderlust</li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Cookie Settings</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-24"
+                                ></span>
+                            </li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Privacy</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-10"
+                                ></span>
+                            </li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Ad Choices</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-16"
+                                ></span>
+                            </li>
+                            <li class="relative group">
+                                <a class="cursor-pointer" href="#">Imprint</a>
+                                <span
+                                    class="absolute bg-[#bca08e] h-[2px] w-0 bottom-0 left-0 rounded-xl duration-300 group-hover:w-10"
+                                ></span>
+                            </li>
+                        </ul>
+                        <ul
+                            class="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-8"
+                        >
+                            <li><img src="/images/bookingdotcom.svg" /></li>
+                            <li><img src="/images/kayak.svg" /></li>
+                            <li><img src="/images/opentable.svg" /></li>
+                            <li><img src="/images/priceline.svg" /></li>
+                            <li><img src="/images/agoda.svg" /></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6 items-center md:items-start">
+                        <ul class="flex justify-center md:justify-start gap-8">
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/fb.svg"
+                                    alt="Facebook"
+                                />
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on Facebook
+                                </span>
+                            </li>
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/ig.svg"
+                                    alt="Instagram"
+                                />
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on Instagram
+                                </span>
+                            </li>
+                            <li class="relative group">
+                                <img
+                                    class="cursor-pointer p-2 rounded bg-transparent hover:bg-[#8f7669] transition duration-300"
+                                    src="/images/x.svg"
+                                    alt="X"
+                                />
+                                <span
+                                    class="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 bg-gray-800/80 text-white text-xs px-1 py-1 rounded shadow-md"
+                                >
+                                    Follow on X
+                                </span>
+                            </li>
+                        </ul>
+
+                        <ul class="flex flex-wrap justify-center md:justify-start gap-4">
+                            <li>
+                                <button
+                                    class="flex flex-row gap-1 justify-center items-center text-sm rounded bg-[#ddc7bb] border border-transparent hover:border-[#8f7669] px-4 py-2 font-medium text-[#000000] md:px-6 md:py-3 md:text-base"
+                                >
+                                    <img
+                                        class="h-2 w-2 md:h-5 md:w-5"
+                                        src="images/globe.svg"
+                                        alt="Language"
+                                    />
+                                    English
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="text-sm rounded bg-[#ddc7bb] border border-transparent hover:border-[#8f7669] px-4 py-2 flex items-center gap-2 justify-center font-medium text-[#000000] md:px-6 md:py-3 md:text-base"
+                                >
+                                    $ USD
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
